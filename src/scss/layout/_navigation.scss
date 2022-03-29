@@ -1,0 +1,25 @@
+// **************************************
+// NAVIGATION STYLES
+// **************************************
+@use "../utilities" as *;
+
+// <a> link styles
+.main-nav__link {
+  @extend %link-properties;
+  transition: color 0.5s;
+  &:link {
+    color: $color-link-default;
+  }
+  &:visited {
+    color: $color-link-visited;
+  }
+  &:hover {
+    color: $color-link-hover;
+  }
+  &:active {
+    color: $color-link-active;
+  }
+  &:focus {
+    color: blue;
+  }
+}

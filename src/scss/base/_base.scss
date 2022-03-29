@@ -1,0 +1,51 @@
+// **************************************
+// BASE STYLES
+// **************************************
+
+@use "../utilities" as *;
+
+/*-----BASE GLOBAL STYLES------*/
+* {
+  box-sizing: border-box;
+  // background: #000 !important;
+  // color: #0f0 !important;
+  // outline: solid #f00 1px !important;
+}
+
+html {
+  font-size: px-to-rems(16px);
+}
+
+html,
+body {
+  @extend %body-properties;
+}
+
+body {
+  background-image: linear-gradient(
+      to top,
+      rgba($color-bg, 0) 70%,
+      rgba($color-main, 0.8) 10%
+    ),
+    url(../../assets/images/east-tampa-zoom-info.png);
+  background-position: bottom left 32%;
+  background-repeat: no-repeat;
+  @include mq("md") {
+    background-image: linear-gradient(
+        to bottom left,
+        rgba($color-main, 0.8) 65%,
+        rgba($color-secondary, 0.9) 10%
+      ),
+      url(../../assets/images/east-tampa-zoom-info.png);
+    background-position: bottom right 0%;
+  }
+}
+
+p {
+  @extend %text-modules;
+  color: $color-text-dark;
+}
+
+a {
+  @extend %link-properties;
+}

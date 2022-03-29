@@ -1,0 +1,23 @@
+// **************************************
+// CARD STYLES
+// **************************************
+@use "../utilities" as *;
+.card {
+  margin: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: px-to-rems(10px);
+  background-color: $white;
+  border-radius: $soft-curve;
+  max-width: max(400px, 450px);
+
+  &__header {
+    position: relative;
+  }
+
+  &__body {
+    position: relative;
+  }
+  @include mq("lg") {
+    margin-top: -18rem;
+  }
+}

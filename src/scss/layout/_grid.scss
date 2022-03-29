@@ -1,0 +1,26 @@
+// **************************************
+// GRID STYLES
+// **************************************
+@use "../utilities" as *;
+
+/*------GRID LAYOUT STYLES-----------*/
+.grid__container {
+  @extend %ctr-grid-content;
+}
+
+.grid__layout--container {
+  @include mq("lg") {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "weekend midweek";
+    gap: px-to-rems(20px);
+  }
+}
+
+.weekend {
+  grid-area: weekend;
+}
+
+.midweek {
+  grid-area: midweek;
+}

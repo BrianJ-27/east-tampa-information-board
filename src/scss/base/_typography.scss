@@ -1,0 +1,35 @@
+// **************************************
+// TYPOGRAPHY STYLES
+// **************************************
+@use "../utilities" as *;
+
+//h1 styles
+.title__primary {
+  @extend %text-modules;
+  text-align: center;
+  @include text-prop(
+    $size: clamp(2.2rem, 4vw, 3rem),
+    $f-weight: $font-weight-thin,
+    $color: $color-bg
+  );
+}
+
+//h2 styles
+.title__secondary {
+  @include text-prop(
+    $size: clamp(1rem, 4vw, 1.9rem),
+    $f-weight: $font-weight-bold,
+    $l-height: 1.3,
+    $color: $color-accent
+  );
+  @extend %text-modules;
+}
+
+/*----CONTENT STYLES----*/
+
+.content {
+  @include text-prop(
+    $size: clamp(0.85rem, 6vw, 1rem),
+    $f-weight: $font-weight-normal
+  );
+}

@@ -1,0 +1,12 @@
+// **************************************
+// LAYOUT STYLES
+// **************************************
+@use "../utilities" as *;
+
+/*------BASE LAYOUT STYLES-----------*/
+.container {
+  max-width: calc(100% - 2rem);
+  @include mq("md") {
+    max-width: $max-width;
+  }
+}
