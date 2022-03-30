@@ -7,6 +7,7 @@
 .title__primary {
   @extend %text-modules;
   text-align: center;
+  padding: 0rem px-to-rems(25px);
   @include text-prop(
     $size: clamp(2.4rem, 4vw, 3rem),
     $f-weight: $font-weight-thin,
