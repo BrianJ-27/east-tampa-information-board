@@ -24,8 +24,8 @@ body {
 body {
   background-image: linear-gradient(
       to top,
-      rgba($color-bg, 0) 70%,
-      rgba($color-main, 0.8) 10%
+      rgba($color-complement, 0.8) 65%,
+      rgba($color-main, 0.9) 10%
     ),
     url(../../assets/images/east-tampa-zoom-info.png);
   background-position: bottom left 32%;
@@ -34,7 +34,7 @@ body {
     background-image: linear-gradient(
         to bottom left,
         rgba($color-main, 0.8) 65%,
-        rgba($color-secondary, 0.9) 10%
+        rgba($color-complement, 0.9) 10%
       ),
       url(../../assets/images/east-tampa-zoom-info.png);
     background-position: bottom right 0%;
