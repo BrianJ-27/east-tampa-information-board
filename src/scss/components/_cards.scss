@@ -8,16 +8,8 @@
   padding: px-to-rems(10px);
   background-color: $white;
   border-radius: $soft-curve;
-  max-width: max(400px, 450px);
-
-  &__header {
-    position: relative;
-  }
-
-  &__body {
-    position: relative;
-  }
-  @include mq("lg") {
-    margin-top: -18rem;
+  max-width: max(450px, 475px);
+  @include mq("md") {
+    padding: px-to-rems(10px) px-to-rems(25px);
   }
 }

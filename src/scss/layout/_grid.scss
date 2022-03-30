@@ -9,12 +9,22 @@
 }
 
 .grid__layout--container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  grid-template-columns: auto;
+  gap: px-to-rems(10px);
+  grid-template-areas:
+    "heading"
+    "weekend"
+    "midweek";
   @include mq("lg") {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "weekend midweek";
-    gap: px-to-rems(20px);
+    place-items: flex-start;
   }
+}
+
+.heading {
+  grid-area: heading;
 }
 
 .weekend {

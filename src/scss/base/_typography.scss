@@ -3,6 +3,8 @@
 // **************************************
 @use "../utilities" as *;
 
+/*----HEADING STYLES----*/
+
 //h1 styles
 .title__primary {
   @extend %text-modules;
@@ -13,6 +15,10 @@
     $f-weight: $font-weight-thin,
     $color: $color-bg
   );
+  @include mq("md") {
+    text-align: left;
+    padding-left: 0rem;
+  }
 }
 
 //h2 styles

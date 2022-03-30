@@ -32,7 +32,7 @@ body {
   background-repeat: no-repeat;
   @include mq("md") {
     background-image: linear-gradient(
-        to bottom left,
+        to left,
         rgba($color-main, 0.8) 65%,
         rgba($color-complement, 0.9) 10%
       ),
