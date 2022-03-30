@@ -8,7 +8,7 @@
   @extend %text-modules;
   text-align: center;
   @include text-prop(
-    $size: clamp(2.2rem, 4vw, 3rem),
+    $size: clamp(2.4rem, 4vw, 3rem),
     $f-weight: $font-weight-thin,
     $color: $color-bg
   );
